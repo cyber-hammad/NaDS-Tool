@@ -7,12 +7,7 @@
 
 /* Full-screen layout */
 body {
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: sans-serif;
 }
 
 /* Background for Login Page */
@@ -21,47 +16,9 @@ body {
     background-size: cover;
 }
 
-/* Welcome Page Styling */
-.welcome-page {
-    text-align: center;
-    background: url('/static/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-}
-
-/* Welcome Title */
-h1 {
-    font-size: 50px;
-    background-color: rgba(181, 187, 239, 0.8); /* Light gray background with transparency */
-    padding: 20px;
-    width: 100vw;
-    text-align: center;
-    margin: 0;
-    position: fixed;
-    top: 10%;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Subtitle and Developer Name */
-h3 {
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.6); /* Darker background for contrast */
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px; /* Space below the main title */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-
 /* Login Form Styling */
 .login-container {
-    background: rgba(201, 227, 245, 0.9); /* Light background with some transparency */
+    background: rgba(201, 227, 245, 0.9); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -97,4 +54,52 @@ button {
 
 button:hover {
     background: #ddd;
+}
+
+
+/* Welcome Page Styling */
+.welcome-page {
+    text-align: center;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Welcome Title */
+h1 {
+    font-size: 50px;
+    background-color: rgba(181, 187, 239, 0.8); /* Light gray background with transparency */
+    padding: 20px;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    top: 10%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtitle and Developer Name */
+p {
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px; /* Space below the main title */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.error {
+    color: red;            
+    background-color: #ffe6e6; 
+    border: 1px solid red; 
+    padding: 10px;        
+    margin: 10px 0;       
+    border-radius: 5px;   
+    text-align: center;   
 }

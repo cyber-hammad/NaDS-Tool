@@ -6,7 +6,7 @@ from flask import Flask, request, render_template, redirect, session
 
 # Initialize Flask app
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Required for session management
+app.secret_key = 'bc210209607'  # Required for session management
 
 db_file = 'users.db'
 
@@ -45,20 +45,18 @@ def login():
             session['user'] = username
             return redirect('/welcome')  # Redirect to the success page
         else:
-            return render_template('login.html', error="Invalid credentials. Please try again.")
+            return render_template('login.html', error="Invalid credentials.")
     
     return render_template('login.html')
 
 
 @app.route('/welcome')
 def welcome():
-    """Redirects to the success page after login."""
     if 'user' in session:
         return render_template('welcome.html')
     return redirect('/login')
 
 def cli_login():
-    """Handles CLI login."""
     username = input("Enter username: ")
     password = getpass.getpass("Enter password: ")
     conn = sqlite3.connect(db_file)
@@ -74,7 +72,6 @@ def cli_login():
         return False
 
 def cli_admin_login():
-    """Handles admin authentication for CLI user management."""
     username = input("Enter admin username: ")
     password = getpass.getpass("Enter admin password: ")
     conn = sqlite3.connect(db_file)

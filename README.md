@@ -55,8 +55,9 @@ Using SQLite with in NaDS:
 2. View All Tables in users.db
     .tables
 
-3. View the Structure of the users Table
-    PRAGMA table_info(users);
+3. Enable Column Headers and Formatting
+    .headers on
+    .mode column
 
 4. Show All Users in the Database
     SELECT * FROM users;
