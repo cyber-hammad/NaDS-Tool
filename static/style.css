@@ -12,7 +12,7 @@ body {
 
 /* Background for Login Page */
 .login-page {
-    background: url("/static/background4.jpg") no-repeat center center fixed;
+    background: url("/static/background4.jpg") fixed;
     background-size: cover;
 }
 
@@ -60,7 +60,7 @@ button:hover {
 /* Welcome Page Styling */
 .welcome-page {
     text-align: center;
-    background: url('/static/background.jpg') no-repeat center center fixed;
+    background: url('/static/background.jpg') fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
